@@ -24,6 +24,12 @@ public class MitarbeiterManager {
             return provisionsberechnung.berechneProvision(mitarbeiter);
         }
         return 0.0;
+
+
+        // if (provisionsberechnung == null) {
+        //return; }
+        // --> So könnte man das auch abwickeln. Es gewährleistet, dass sämtliche Berechnungen
+        // in den folgenden Zeilen auf jeden Fall kein 0 ergeben.
     }
 
     public void printAlleMitarbeiterMitProvision() {
